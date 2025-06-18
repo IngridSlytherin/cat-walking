@@ -15,11 +15,5 @@ Este é um pequeno projeto de animação em HTML + CSS de um gatinho caminhando 
 
 ## Créditos
 
-Animação criada por Ingrid Padilha.# Cat Walking
-=======
-![alt text](image.png)
-
-## Créditos
-
 Animação criada por Ingrid Padilha.
 
