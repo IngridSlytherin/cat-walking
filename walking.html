@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinho</title>
+
+    <style>
+        .cat{
+            width: 410px;
+            height: 200px;
+            background-image: url(walking_sprite.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            /* background-color: #ccc; */
+            animation: anda 1s steps(12) infinite;
+
+            transform: scalex(-1);
+        }
+
+
+        .cat2 {
+            width: 400px; 
+            height: 200px;
+            /* background-color: #ccc; */
+            background-image: url(walking_sprite.png);
+            background-position-x: -1200px ;
+            background-repeat: no-repeat;
+            animation: pular 0.5s steps(13) infinite;
+            transform: scaleX(-1);
+        }
+
+
+        @keyframes anda {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 -2390px;
+            }
+        }
+
+        @keyframes pular {
+            from { 
+                background-position-y: 0;
+            }
+            to {    
+                background-position-y: -2580px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <div class="cat"></div>
+        <div class="cat2"></div>
+    </div>
+</body>
+</html>
